@@ -1,0 +1,9 @@
+module grades;
+  integer marks = 85;
+  initial begin
+    if (marks >= 90) $display("Grade: A+");
+    else if (marks >= 80) $display("Grade: A");
+    else if (marks >= 70) $display("Grade: B");
+    else $display("Grade: C/Fail");
+  end
+endmodule

@@ -1,0 +1,7 @@
+module largest_two;
+  integer a = 45, b = 67;
+  initial begin
+    if (a > b) $display("%0d is largest", a);
+    else $display("%0d is largest", b);
+  end
+endmodule

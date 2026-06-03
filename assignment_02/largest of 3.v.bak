@@ -1,0 +1,8 @@
+module largest_three;
+  integer a = 10, b = 25, c = 15;
+  initial begin
+    if (a >= b && a >= c) $display("%0d is largest", a);
+    else if (b >= a && b >= c) $display("%0d is largest", b);
+    else $display("%0d is largest", c);
+  end
+endmodule

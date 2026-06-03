@@ -1,0 +1,7 @@
+module addition;
+  integer a = 10, b = 20, res;
+  initial begin
+    res = a + b;
+    $display("Addition: %0d", res);
+  end
+endmodule

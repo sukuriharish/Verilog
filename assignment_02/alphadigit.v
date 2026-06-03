@@ -1,0 +1,11 @@
+module alphadigit;
+  reg [7:0] char = "7";
+  initial begin
+    if ((char >= "a" && char <= "z") || (char >= "A" && char <= "Z"))
+      $display("%c is an Alphabet", char);
+    else if (char >= "0" && char <= "9")
+      $display("%c is a Digit", char);
+    else
+      $display("%c is a Special Character", char);
+  end
+endmodule

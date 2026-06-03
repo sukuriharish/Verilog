@@ -1,0 +1,10 @@
+module prime;
+  integer n = 17, i, count = 0;
+  initial begin
+    for (i = 1; i <= n; i = i + 1) begin
+      if (n % i == 0) count = count + 1;
+    end
+    if (count == 2) $display("%0d is a Prime Number", n);
+    else $display("%0d is not a Prime Number", n);
+  end
+endmodule
